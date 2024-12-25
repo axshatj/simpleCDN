@@ -1,5 +1,5 @@
 {
-  "name": "simple-cdn",
+  "name": "simpleCDN",
   "version": "1.0.0",
   "description": "A simple CDN implementation for learning purposes",
   "main": "src/load-balancer.js",
