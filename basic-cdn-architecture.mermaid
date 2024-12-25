@@ -1,0 +1,10 @@
+graph TD
+    Client[Client] -->|Request| LB[Load Balancer]
+    LB -->|Route Request| ES1[Edge Server 1]
+    LB -->|Route Request| ES2[Edge Server 2]
+    ES1 -->|Cache Miss| OS[Origin Server]
+    ES2 -->|Cache Miss| OS
+    OS -->|Content| ES1
+    OS -->|Content| ES2
+    ES1 -->|Cached Content| Client
+    ES2 -->|Cached Content| Client
