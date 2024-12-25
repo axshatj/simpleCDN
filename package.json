@@ -10,7 +10,7 @@
     "start:client": "node src/client.js"
   },
   "keywords": ["cdn", "content delivery network", "learning"],
-  "author": "Your Name",
+  "author": "axshatj",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
