@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 const CDN_URL = 'http://localhost:8080';
-const FILES = ['image1.jpg', 'image2.jpg', 'text1.txt'];
+const FILES = ['image1.jpg', 'image2.jpg','image1.jpg', 'image1.jpg', 'text2.txt','image2.jpg'];
 
 async function testCDN() {
   for (const file of FILES) {
