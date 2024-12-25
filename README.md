@@ -20,7 +20,7 @@ This project is a basic implementation of a Content Delivery Network (CDN) for l
 1. Clone this repository:
    ```bash
    git clone https://github.com/axshatj/simpleCDN.git
-   cd simple-cdn-lru
+   cd simpleCDN
    ```
 
 2. Install the dependencies:
