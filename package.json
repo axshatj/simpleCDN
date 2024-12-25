@@ -2,14 +2,12 @@
   "name": "simple-cdn",
   "version": "1.0.0",
   "description": "A simple CDN implementation for learning purposes",
-  "main": "dist/load-balancer.js",
+  "main": "src/load-balancer.js",
   "scripts": {
-    "build": "tsc",
-    "start:origin": "ts-node src/origin-server.ts",
-    "start:edge": "ts-node src/edge-server.ts",
-    "start:loadbalancer": "ts-node src/load-balancer.ts",
-    "start:client": "ts-node src/client.ts",
-    "start": "node dist/load-balancer.js"
+    "start:origin": "node src/origin-server.js",
+    "start:edge": "node src/edge-server.js",
+    "start:loadbalancer": "node src/load-balancer.js",
+    "start:client": "node src/client.js"
   },
   "keywords": ["cdn", "content delivery network", "learning"],
   "author": "Your Name",
@@ -17,13 +15,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^16.11.12",
-    "@types/node-fetch": "^2.5.12",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.3"
   }
 }
 

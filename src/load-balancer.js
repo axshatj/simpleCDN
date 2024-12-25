@@ -1,6 +1,5 @@
-import express from 'express';
-import type { Request, Response } from 'express';
-import fetch from 'node-fetch';
+const express = require('express');
+const fetch = require('node-fetch');
 
 const app = express();
 const PORT = 8080;
@@ -12,7 +11,7 @@ const EDGE_SERVERS = [
 
 let currentServerIndex = 0;
 
-app.get('/:file', async (req: Request, res: Response) => {
+app.get('/:file', async (req, res) => {
   const file = req.params.file;
   const server = EDGE_SERVERS[currentServerIndex];
   

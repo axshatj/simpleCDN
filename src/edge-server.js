@@ -1,14 +1,13 @@
-import express from 'express';
-import type { Request, Response } from 'express';
-import fetch from 'node-fetch';
+const express = require('express');
+const fetch = require('node-fetch');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 const ORIGIN_SERVER = 'http://localhost:3000';
 
-const cache: { [key: string]: string } = {};
+const cache = {};
 
-app.get('/:file', async (req: Request, res: Response) => {
+app.get('/:file', async (req, res) => {
   const file = req.params.file;
   
   if (cache[file]) {
