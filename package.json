@@ -9,12 +9,16 @@
     "start:loadbalancer": "node src/load-balancer.js",
     "start:client": "node src/client.js"
   },
-  "keywords": ["cdn", "content delivery network", "learning"],
+  "keywords": [
+    "cdn",
+    "content delivery network",
+    "learning"
+  ],
   "author": "axshatj",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "simpleCDN": "file:"
   }
 }
-
